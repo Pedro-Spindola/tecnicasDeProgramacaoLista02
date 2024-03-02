@@ -15,7 +15,8 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package atividadadeLista01;
+package atividadeLista02;
+import java.util.Scanner;
 
 /**
  *
@@ -23,13 +24,26 @@ package atividadadeLista01;
  * @date 02/03/2024
  * @brief Class Exercicios01
  */
-public class Questao11 {
+public class Questao07 {
     
         public static void main(String[] args) {
-        int n = 1;
-        while (n <= 10000) {
-            System.out.println(n);
-            n++;
+        Scanner scanner = new Scanner(System.in);
+
+        int a, b;
+
+        System.out.println("Informe o primeiro numero.");
+        a = scanner.nextInt();
+        System.out.println("Informe o segundo numero.");
+        b = scanner.nextInt();
+        
+        if(a > b){
+            System.out.println("Valor de A: " + a);
+            System.out.println("Valor de B: " + b);
+            System.out.println("Maior: " + a);
+        } else {
+                        System.out.println("Valor de A: " + a);
+            System.out.println("Valor de B: " + b);
+            System.out.println("Maior: " + b);
         }
     }
 }

@@ -15,33 +15,37 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package atividadadeLista01;
+package atividadeLista02;
 import java.util.Scanner;
-
 /**
  *
  * @author Pedro Spindola
  * @date 02/03/2024
  * @brief Class Exercicios01
  */
-public class Questao06 {
+public class Questao13 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        int x1, x2, y1, y2;
+        int x, y, r, a;
 
-        System.out.println("Informe a coordenadas x1, y1, x2, y2)");
-        x1 = scanner.nextInt();
-        y1 = scanner.nextInt();
-        x2 = scanner.nextInt();
-        y2 = scanner.nextInt();
-
-        int dist = (((x1 - x2) ^ 2) + ((y1 - y2) ^ 2));
-
-        System.out.println("Ponto 1: (" + x1 + "," + y1 + ")");
-        System.out.println("Ponto 2: (" + x2 + "," + y2 + ")");
-        System.out.println("Distância: " + dist);
-
+        System.out.println("Informe o valor de x.");
+        x = scanner.nextInt();
+        System.out.println("Informe o valor de y.");
+        y = scanner.nextInt();
+        r = 0;
+        
+        if(y == 0 || y == 1) {
+            r = x;
+            System.out.println("Resultado da equação x^y é = " + r);
+        }   else {
+            a = x;
+            for (int i = 1; i < y; i++) {
+                r = x * a;
+                a = r;
+            }
+            System.out.println("Resultado da equação x^y é = " + r);
+        }
     }
 }

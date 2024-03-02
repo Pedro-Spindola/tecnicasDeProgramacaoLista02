@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package atividadadeLista01;
+package atividadeLista02;
 
 /**
  *
@@ -23,24 +23,9 @@ package atividadadeLista01;
  * @date 02/03/2024
  * @brief Class Exercicios01
  */
-public class Questao14 {
-
+public class Questao03 {
     public static void main(String[] args) {
-        
-        int numbAtual, numbDivisor;
-        
-        System.out.println("O números primos compreendidos entre 1 e 1000 são:");
-        for (int i = 2; i <= 100; i++) {
-            numbAtual = i;
-            numbDivisor = 0;
-            for(int j = 1; j <= i; j++){
-                if(numbAtual % j == 0){
-                    numbDivisor++;
-                }
-            }
-            if(numbDivisor == 2){
-                System.out.println(numbAtual);
-            }
-        }
+        int x = 4, y = 3, z = 2;
+        System.out.println("Resultado: " + x*y/z);
     }
 }

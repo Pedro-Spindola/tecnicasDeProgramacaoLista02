@@ -15,7 +15,8 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package atividadadeLista01;
+package atividadeLista02;
+import java.util.Scanner;
 
 /**
  *
@@ -23,12 +24,24 @@ package atividadadeLista01;
  * @date 02/03/2024
  * @brief Class Exercicios01
  */
-public class Questao10 {
-    
-        public static void main(String[] args) {
+public class Questao06 {
 
-        for(int i = 1; i <= 10000; i++){
-            System.out.println(i);
-    }
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        int x1, x2, y1, y2;
+
+        System.out.println("Informe a coordenadas x1, y1, x2, y2)");
+        x1 = scanner.nextInt();
+        y1 = scanner.nextInt();
+        x2 = scanner.nextInt();
+        y2 = scanner.nextInt();
+
+        int dist = (((x1 - x2) ^ 2) + ((y1 - y2) ^ 2));
+
+        System.out.println("Ponto 1: (" + x1 + "," + y1 + ")");
+        System.out.println("Ponto 2: (" + x2 + "," + y2 + ")");
+        System.out.println("Distância: " + dist);
+
     }
 }

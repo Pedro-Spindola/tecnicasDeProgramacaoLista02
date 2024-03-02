@@ -15,24 +15,20 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package atividadadeLista01;
-import java.util.Scanner;
+package atividadeLista02;
 
 /**
  *
  * @author Pedro Spindola
- * @date 10/02/2024
+ * @date 02/03/2024
  * @brief Class Exercicios01
  */
-public class Questao04 {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        
-        int x = scanner.nextInt();
-        int y = scanner.nextInt();
-        int z = scanner.nextInt();
-        
-        System.out.println("Resultado: " + x*y/z);
-        
+public class Questao10 {
+    
+        public static void main(String[] args) {
+
+        for(int i = 1; i <= 10000; i++){
+            System.out.println(i);
+    }
     }
 }

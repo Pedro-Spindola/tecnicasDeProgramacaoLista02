@@ -15,7 +15,8 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package atividadadeLista01;
+package atividadeLista02;
+import java.util.Scanner;
 
 /**
  *
@@ -23,9 +24,25 @@ package atividadadeLista01;
  * @date 02/03/2024
  * @brief Class Exercicios01
  */
-public class Questao03 {
+public class Questao16 {
+
     public static void main(String[] args) {
-        int x = 4, y = 3, z = 2;
-        System.out.println("Resultado: " + x*y/z);
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Digite o tamanho da matriz quadrada(X):");
+        int tamanho = scanner.nextInt();
+
+        int[][] matriz = new int[tamanho][tamanho];
+
+        System.out.println("Digite os elementos da matriz: (Aperte enter para cada elemento.)");
+        for (int i = 0; i < tamanho; i++) {
+            for (int j = 0; j < tamanho; j++) {
+                matriz[i][j] = scanner.nextInt();
+            }
+        }
+        System.out.println("Diagonal Secundária:");
+        for (int i = 0; i < tamanho; i++) {
+            System.out.println(matriz[i][tamanho - 1 - i]);
+        }
     }
 }

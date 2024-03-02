@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package atividadadeLista01;
+package atividadeLista02;
 import java.util.Scanner;
 
 /**
@@ -24,26 +24,25 @@ import java.util.Scanner;
  * @date 02/03/2024
  * @brief Class Exercicios01
  */
-public class Questao07 {
-    
-        public static void main(String[] args) {
+public class Questao15 {
+
+    public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        int a, b;
+        System.out.println("Digite o tamanho da matriz quadrada(X):");
+        int tamanho = scanner.nextInt();
 
-        System.out.println("Informe o primeiro numero.");
-        a = scanner.nextInt();
-        System.out.println("Informe o segundo numero.");
-        b = scanner.nextInt();
-        
-        if(a > b){
-            System.out.println("Valor de A: " + a);
-            System.out.println("Valor de B: " + b);
-            System.out.println("Maior: " + a);
-        } else {
-                        System.out.println("Valor de A: " + a);
-            System.out.println("Valor de B: " + b);
-            System.out.println("Maior: " + b);
+        int[][] matriz = new int[tamanho][tamanho];
+
+        System.out.println("Digite os elementos da matriz: (Aperte enter para cada elemento.)");
+        for (int i = 0; i < tamanho; i++) {
+            for (int j = 0; j < tamanho; j++) {
+                matriz[i][j] = scanner.nextInt();
+            }
+        }
+        System.out.println("Diagonal Principal:");
+        for (int i = 0; i < tamanho; i++) {
+            System.out.println(matriz[i][i]);
         }
     }
 }

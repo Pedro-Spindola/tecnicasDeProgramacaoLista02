@@ -15,37 +15,24 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package atividadadeLista01;
+package atividadeLista02;
 import java.util.Scanner;
+
 /**
  *
  * @author Pedro Spindola
- * @date 02/03/2024
+ * @date 10/02/2024
  * @brief Class Exercicios01
  */
-public class Questao13 {
-
+public class Questao04 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
-        int x, y, r, a;
-
-        System.out.println("Informe o valor de x.");
-        x = scanner.nextInt();
-        System.out.println("Informe o valor de y.");
-        y = scanner.nextInt();
-        r = 0;
         
-        if(y == 0 || y == 1) {
-            r = x;
-            System.out.println("Resultado da equação x^y é = " + r);
-        }   else {
-            a = x;
-            for (int i = 1; i < y; i++) {
-                r = x * a;
-                a = r;
-            }
-            System.out.println("Resultado da equação x^y é = " + r);
-        }
+        int x = scanner.nextInt();
+        int y = scanner.nextInt();
+        int z = scanner.nextInt();
+        
+        System.out.println("Resultado: " + x*y/z);
+        
     }
 }

@@ -15,20 +15,30 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package atividadadeLista01;
+package atividadeLista02;
+import java.util.Scanner;
 
 /**
  *
  * @author Pedro Spindola
- * @date 10/02/2024
+ * @date 02/03/2024
  * @brief Class Exercicios01
  */
-public class Questao02 {
+public class Questao05 {
+
     public static void main(String[] args) {
-        double x = 3.5, y = 4.64;
-        
-        System.out.println("Valor de X: " + x);
-        System.out.println("Valor de Y: " + y);
-        
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Informe a velocidade em (km/h)");
+        int velocidade = scanner.nextInt();
+        System.out.println("Informe o tempo gasto na viagem. (horas)");
+        int tempoV = scanner.nextInt();
+
+        int dist = (velocidade * tempoV);
+
+        System.out.println("Velocidade: " + velocidade + "km/h");
+        System.out.println("Tempo da viagem: " + tempoV + "h");
+        System.out.println("Distância percorrida: " + dist + "km");
+
     }
 }

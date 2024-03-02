@@ -15,35 +15,20 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package atividadadeLista01;
-import java.util.Scanner;
+package atividadeLista02;
 
 /**
  *
  * @author Pedro Spindola
- * @date 02/03/2024
+ * @date 10/02/2024
  * @brief Class Exercicios01
  */
-public class Questao08 {
- 
-        public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
-        int a, b, maior;
-
-        System.out.println("Informe o primeiro numero.");
-        a = scanner.nextInt();
-        System.out.println("Informe o segundo numero.");
-        b = scanner.nextInt();
-
-        if (a > b) {
-            maior = a;
-        } else {
-            maior = b;
-        }
-
-        System.out.println("Valor de A: " + a);
-        System.out.println("Valor de B: " + b);
-        System.out.println("Maior: " + maior);
+public class Questao02 {
+    public static void main(String[] args) {
+        double x = 3.5, y = 4.64;
+        
+        System.out.println("Valor de X: " + x);
+        System.out.println("Valor de Y: " + y);
+        
     }
 }

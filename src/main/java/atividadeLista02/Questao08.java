@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package atividadadeLista01;
+package atividadeLista02;
 import java.util.Scanner;
 
 /**
@@ -24,21 +24,26 @@ import java.util.Scanner;
  * @date 02/03/2024
  * @brief Class Exercicios01
  */
-public class Questao05 {
-
-    public static void main(String[] args) {
+public class Questao08 {
+ 
+        public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Informe a velocidade em (km/h)");
-        int velocidade = scanner.nextInt();
-        System.out.println("Informe o tempo gasto na viagem. (horas)");
-        int tempoV = scanner.nextInt();
+        int a, b, maior;
 
-        int dist = (velocidade * tempoV);
+        System.out.println("Informe o primeiro numero.");
+        a = scanner.nextInt();
+        System.out.println("Informe o segundo numero.");
+        b = scanner.nextInt();
 
-        System.out.println("Velocidade: " + velocidade + "km/h");
-        System.out.println("Tempo da viagem: " + tempoV + "h");
-        System.out.println("Distância percorrida: " + dist + "km");
+        if (a > b) {
+            maior = a;
+        } else {
+            maior = b;
+        }
 
+        System.out.println("Valor de A: " + a);
+        System.out.println("Valor de B: " + b);
+        System.out.println("Maior: " + maior);
     }
 }

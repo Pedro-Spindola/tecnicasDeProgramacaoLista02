@@ -15,16 +15,21 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package atividadadeLista01;
+package atividadeLista02;
 
 /**
  *
  * @author Pedro Spindola
- * @date 10/02/2024
+ * @date 02/03/2024
  * @brief Class Exercicios01
  */
-public class Questao01 {
-    public static void main(String[] args) {
-        System.out.println("Nome: Pedro Henrique Spíndola");
+public class Questao11 {
+    
+        public static void main(String[] args) {
+        int n = 1;
+        while (n <= 10000) {
+            System.out.println(n);
+            n++;
+        }
     }
 }

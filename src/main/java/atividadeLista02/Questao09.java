@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package atividadadeLista01;
+package atividadeLista02;
 import java.util.Scanner;
 
 /**
@@ -24,25 +24,23 @@ import java.util.Scanner;
  * @date 02/03/2024
  * @brief Class Exercicios01
  */
-public class Questao16 {
-
-    public static void main(String[] args) {
+public class Questao09 {
+    
+        public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        int l1, l2, l3;
 
-        System.out.println("Digite o tamanho da matriz quadrada(X):");
-        int tamanho = scanner.nextInt();
-
-        int[][] matriz = new int[tamanho][tamanho];
-
-        System.out.println("Digite os elementos da matriz: (Aperte enter para cada elemento.)");
-        for (int i = 0; i < tamanho; i++) {
-            for (int j = 0; j < tamanho; j++) {
-                matriz[i][j] = scanner.nextInt();
-            }
-        }
-        System.out.println("Diagonal Secundária:");
-        for (int i = 0; i < tamanho; i++) {
-            System.out.println(matriz[i][tamanho - 1 - i]);
+        System.out.println("Informe os lados do triângulo a, b, c: ");
+        l1 = scanner.nextInt();
+        l2 = scanner.nextInt();
+        l3 = scanner.nextInt();
+        
+        if(l1 == l2 && l1 == l3){
+            System.out.println("Triângulo se classifica como: Equilátero");
+        } else if(l1 == l2 || l1 == l3 || l2 == l3){
+            System.out.println("Triângulo se classifica como: Isósceles");
+        } else {
+            System.out.println("Triângulo se classifica como: Escaleno");
         }
     }
 }

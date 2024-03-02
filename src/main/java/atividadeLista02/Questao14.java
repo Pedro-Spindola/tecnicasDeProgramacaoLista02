@@ -15,29 +15,32 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package atividadadeLista01;
-import java.util.Scanner;
+package atividadeLista02;
+
 /**
  *
  * @author Pedro Spindola
  * @date 02/03/2024
  * @brief Class Exercicios01
  */
-public class Questao12 {
-    
-        public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+public class Questao14 {
 
-        System.out.println("Informe o numero desejada calcular o fatorial dele: ");
-        int n = scanner.nextInt();
-        int resultado = 1;
-        if(n == 0){
-            System.out.println("Fatorial de " + n + " = " + resultado);
-        } else {
-            for(int i = 1; i <= n; i++){
-                resultado = resultado * i;
+    public static void main(String[] args) {
+        
+        int numbAtual, numbDivisor;
+        
+        System.out.println("O números primos compreendidos entre 1 e 1000 são:");
+        for (int i = 2; i <= 100; i++) {
+            numbAtual = i;
+            numbDivisor = 0;
+            for(int j = 1; j <= i; j++){
+                if(numbAtual % j == 0){
+                    numbDivisor++;
+                }
             }
-            System.out.println("Fatorial de " + n + " = " + resultado);
+            if(numbDivisor == 2){
+                System.out.println(numbAtual);
+            }
         }
     }
 }

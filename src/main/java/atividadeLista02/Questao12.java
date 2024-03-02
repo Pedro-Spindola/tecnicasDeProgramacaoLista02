@@ -15,34 +15,29 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package atividadadeLista01;
+package atividadeLista02;
 import java.util.Scanner;
-
 /**
  *
  * @author Pedro Spindola
  * @date 02/03/2024
  * @brief Class Exercicios01
  */
-public class Questao15 {
-
-    public static void main(String[] args) {
+public class Questao12 {
+    
+        public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Digite o tamanho da matriz quadrada(X):");
-        int tamanho = scanner.nextInt();
-
-        int[][] matriz = new int[tamanho][tamanho];
-
-        System.out.println("Digite os elementos da matriz: (Aperte enter para cada elemento.)");
-        for (int i = 0; i < tamanho; i++) {
-            for (int j = 0; j < tamanho; j++) {
-                matriz[i][j] = scanner.nextInt();
+        System.out.println("Informe o numero desejada calcular o fatorial dele: ");
+        int n = scanner.nextInt();
+        int resultado = 1;
+        if(n == 0){
+            System.out.println("Fatorial de " + n + " = " + resultado);
+        } else {
+            for(int i = 1; i <= n; i++){
+                resultado = resultado * i;
             }
-        }
-        System.out.println("Diagonal Principal:");
-        for (int i = 0; i < tamanho; i++) {
-            System.out.println(matriz[i][i]);
+            System.out.println("Fatorial de " + n + " = " + resultado);
         }
     }
 }
